@@ -64,10 +64,33 @@ skillsHeader.forEach((el)=>{
         tabs.forEach(tab => {
             tab.classList.remove('qualification__active');
         })
-        tab.classList.add('qualification__active')
 
       })
   })
+
+
+/*==================== SERVICES MODAL ====================*/
+const   modalViews = document.querySelectorAll('.services__modal'),
+        modalBtns = document.querySelectorAll('.services__button'),
+        modalCloses = document.querySelectorAll('.services__modal-close');
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal');
+}
+
+modalBtns.forEach((modalBtn, i ) => {
+    modalBtn.addEventListener('click', ()=> {
+        modal(i);
+    })
+})
+
+modalCloses.forEach((modalCLose) => {
+    modalCLose.addEventListener('click', ()=> {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
 
 /*==================== PORTFOLIO SLIDER  ====================*/
 function sliderPortfolio (){
@@ -82,12 +105,12 @@ function sliderPortfolio (){
     function changePosition (change) {
        const currentElement = Number(document.querySelector('.portfolio__content--show').dataset.id);
 
-       
+       console.log(currentElement)
 
        value = currentElement;
        value += change;
        
-      
+       console.log(value)
 
        if (value === 0 || value === sliders.length+1){
           value = value === 0 ? sliders.length : 1;
@@ -104,7 +127,7 @@ sliderPortfolio();
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]');
 
-
+console.log(sections);
 
 function scrollActive(){
     const scrollY = window.pageYOffset;
@@ -143,7 +166,7 @@ window.addEventListener('scroll', scrollUp)
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'fas'
+const iconTheme = 'fa-sun'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -151,13 +174,13 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fas' : 'far'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'fas' ? 'add' : 'remove'](iconTheme)
+  themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -169,25 +192,4 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-/*==================== FORM (EMAIL) ====================*/
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener("submit", sendEmail);
-
-async function sendEmail(event){
-    event.preventDefault()
-    const form = new FormData(this);
-    const response = await fetch(this.action,{
-        method: this.method,
-        body: form,
-        headers:{
-            'Accept': 'aplication/json'
-        }
-    });
-    if(response.ok){
-        this.reset();
-        alert('Gracias por contactare')
-    }
-}
-
 
