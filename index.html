@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <script src="https://kit.fontawesome.com/91e11de106.js" crossorigin="anonymous"></script>
+        
+        <!--==================== SWIPER CSS ====================-->
+       
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+
+
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Santiago</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="fas fa-home nav__icon"></i> Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="far fa-user nav__icon"></i> Sobre mi
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="far fa-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="far fa-image nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="fas fa-inbox nav__icon"></i> Contacto
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <i class="fas fa-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+
+                    <!-- Theme change button -->
+                    <i class="far fa-moon change-theme" id="theme-button"></i>
+                   
+                    
+                    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://linkedin.com/in/santiagopena95" class="home__social-icon" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="https://wa.link/y262hr" class="home__social-icon" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <a href="https://github.com/Santiago-Pe" class="home__social-icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home_blob-img"  xlink:href="/assets/img/foto-perfil-blob.png"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">!Hola, soy Santiago!</h1>
+                            <h3 class="home__subtitle">Desarrollador Frontend</h3>
+                            <p class="home__description">Experiencia en el armado y desarrollo de sitios web, aportando cirterio de diseño web.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contáctame  <i class="fas fa-inbox button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="fas fa-mouse home__scroll-mouse"></i>
+                            <span class="home__scroll-name"> Scroll down</span>
+                            <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">Sobre mi</h2>
+                <span class="section__subtitle">Mi introducción</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/img-perfil.png" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            A lo largo de mi vida he desarrollado y/o mejorado distintas habilidades a la hora de realizar mis trabajos, como la creatividad y el diseño de soluciones a distintos problemas,la capacidad de relacionarme tanto sea con compañeros de trabajo como con clientes, haciendo enfasis siempre en la responsabilidad.
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">+1000</span>
+                                <span class="about__info-name">horas <br> de experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">+04</span>
+                                <span class="about__info-name">Proyectos <br>completados</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">+01</span>
+                                <span class="about__info-name">Compañia <br>trabajada</span>
+                            </div>
+                        </div>
+                        <div class="about__button">
+                            <a download="" href="assets/Santiago Peña CV.pdf" class="button button--flex">
+                               Descargar CV <i class="fas fa-cloud-download-alt button__icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+        
+            </section>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Software Skills</h2>
+                <span class="section__subtitle">Nivel tecnico</span>
+
+                <div class="skills__container container grid">
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="fas fa-code skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Desarrollador Frontend</h1>
+                            </div>
+
+                            <i class="fas fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-html5 skill__icon"></i>
+                                    <h3 class="skills__name">HTML</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-css3-alt skill__icon"></i>
+                                    <h3 class="skills__name">CSS</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-js-square skill__icon"></i>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-react skill__icon"></i>
+                                    <h3 class="skills__name">React Js</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-wordpress skill__icon"></i>
+                                    <h3 class="skills__name">Wordpress</h3>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-bootstrap skill__icon"></i>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        <!--==================== SKILLS 2 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-swatchbook skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Diseño</h1>
+                            </div>
+
+                            <i class="fas fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fas fa-images skill__icon"></i>
+                                    <h3 class="skills__name">Photoshop</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fas fa-bezier-curve skill__icon"></i>
+                                    <h3 class="skills__name">Illustrator</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--==================== SKILLS 3 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-server skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Soft skills</h1>
+                            </div>
+
+                            <i class="fas fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-github skill__icon"></i>
+                                    <h3 class="skills__name">Git</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <i class="fab fa-linux skill__icon"></i>
+                                    <h3 class="skills__name">Linux</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+
+                <h2 class="section__title">Formación</h2>
+                <span class="section__subtitle">Linea de vida</span>
+
+
+                <div class="qualification__container container">
+                    
+
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active"  data-target="#education">
+                            <i class="fas fa-graduation-cap qualification__icon"></i>
+                            Educación
+                        </div>
+                        <div class="qualification__button button--flex"  data-target="#work">
+                            <i class="fas fa-briefcase qualification__icon"></i>
+                           Trabajo
+                        </div>
+                    </div>
+
+                    
+                    <div class="qualification__sections">
+
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content " data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->    
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">Frontend Developer</h3>
+                                    <span class="qualification__subtitle"> Novazgroup</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar-alt qualification__icon"></i>
+                                        2021 - HOY
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+                            
+                            <!--==================== QUALIFICATION 2 ====================-->    
+                            <div class="qualification__data">
+
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Encargado de Logistica</h3>
+                                    <span class="qualification__subtitle"> Concrete SA</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar-alt qualification__icon"></i>
+                                        2019-2021
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <!--==================== QUALIFICATION 3 ====================-->    
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">Telemarketer</h3>
+                                    <span class="qualification__subtitle"> Previnca Salud SA</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar-alt qualification__icon"></i>
+                                        2017-2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                            </div> 
+                        </div>
+
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->    
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">Frontend Developer</h3>
+                                    <span class="qualification__subtitle"> Coderhouse</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar-alt qualification__icon"></i>
+                                        2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+                            
+                            <!--==================== QUALIFICATION 2 ====================-->    
+                            <div class="qualification__data">
+
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Photoshop & Illustrator</h3>
+                                    <span class="qualification__subtitle"> Coderhouse</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar-alt qualification__icon"></i>
+                                        2020
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Proyectos realizados</span>
+
+ 
+                <div class="portfolio__container container">
+
+                    <div class="slider__container s_container">
+                        <i class="fas fa-arrow-left slider__arrow" id="before"></i>
+                        <!--==================== PORTFOLIO 1====================-->
+                        <div class="portfolio__content grid portfolio__content--show" data-id="1">
+                            <img src="assets/img/letToast.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Let's Toast</h3>
+                                <p class="portfolio__description">E-commerce de bebidas alcoholicas trabajado con ReactJs, HTML y CSS</p>
+                                <a href="https://santiago-pe.github.io/TP-React/" class="button button--flex button--small portfolio__button">
+                                    Demo 
+                                    <i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 2====================-->
+                        <div class="portfolio__content grid" data-id="2">
+                            <img src="assets/img/cotiflet.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Coti-Flet</h3>
+                                <p class="portfolio__description">Cotizador de fletes con evios nacionales hecho con JavaScript, HTML y CSS</p>
+                                <a href="https://santiago-pe.github.io/Cotizador-de-Fletes/" class="button button--flex button--small portfolio__button">
+                                    Demo 
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 3====================-->
+                        <div class="portfolio__content grid" data-id="3">
+                            <img src="assets/img/b-port.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">B-PORT</h3>
+                                <p class="portfolio__description">E-commerce de tienda de ropa hecho con HTML,CSS, Sass y Bootstrap.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo 
+                                    <i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right slider__arrow" id="next"></i>
+                    </div>
+                </div>          
+            </section>
+            
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contáctame</h2>
+                <span class="section__subtitle">Ponerse en contacto</span>
+
+                <div class="contact__container container grid">
+                    <div>
+
+                        <div class="contact__information">
+                            <i class="fas fa-phone-alt contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Llamadas</h3>
+                                <span class="contact__subtitle">+54 9 341 227 8025</span>
+                            </div>
+
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="fas fa-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">penasantiago346@gmail.com</span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <form action="https://formspree.io/f/xqknbqpd"
+                    method="POST" class="contact__form grid" id="contact-form">
+                        <div class="contact__inputs grid">
+
+                            <div class="contac__content">
+                                <label for="nombre" class="contac__label">Nombre</label>
+                                <input type="text" name="nombre" class="contact__input" id="nombre" required>
+                            </div>
+
+                            <div class="contac__content">
+                                <label for="email" class="contac__label">Email</label>
+                                <input type="email" name="email" class="contact__input" id="email" required>
+                            </div>
+
+                        </div>
+
+                        <div class="contac__content">
+                            <label for="empresa" class="contac__label">Empresa</label>
+                            <input type="text" name="empresa"class="contact__input" id="empresa">
+                        </div>
+
+                        <div class="contac__content">
+                            <label for="mensaje" class="contac__label">Mensaje</label>
+                            <textarea name="mensaje" id="" cols="0" rows="7" class="contact__input" id="mensaje" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button button--flex button--send">
+                                Enviar mensaje
+                                <i class="fas fa-inbox button__icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Santiago</h1>
+                        <span class="footer__subtitle">Desarrollador Frontend</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+
+                        <a href="https://linkedin.com/in/santiagopena95" class="footer__social" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://github.com/Santiago-Pe" class="footer__social" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://wa.link/y262hr" class="footer__social" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <p class="footer__copy">&#169; Bedimcode. All right reserved.</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="fas fa-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="/assets/js/main.js"></script>
+        <!--==================== FORM ====================-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>
+
