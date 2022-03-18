@@ -22,6 +22,9 @@
     --container-color: #FFF ;
     --scroll--bar-color:hsl(var(--hue-color), 12%, 90%);
     --scroll--thumb-color:hsl(var(--hue-color), 12%, 80%);
+
+
+    
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;;
 
@@ -660,6 +663,12 @@ image{
 }
 .portfolio__button:hover .button__icon{
     transform: translateX(.25rem);
+}
+.portfolio__data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 /* Sldier */
