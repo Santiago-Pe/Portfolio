@@ -10,6 +10,11 @@ if (navToggel){
         navMenu.classList.add('show-menu');
     })
 }
+// if (navToggel){
+//     navToggel.addEventListener('click', () => {
+//         navMenu.classList.add('show-menu');
+//     })
+// }
 
 
 /*===== MENU HIDDEN =====*/
